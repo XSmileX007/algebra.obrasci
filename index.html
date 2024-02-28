@@ -14,12 +14,49 @@
       autocomplete="off"
     >
       <p>
-        <label for="ime">Ime i prezime:</label><br />
-        <input id="ime" type="text" required />
+        <label for="ime">* Korisnik:</label><br />
+        <input id="ime" type="text" required placeholder="Ime i prezime" />
       </p>
       <p>
-        <label for="email">email:</label><br />
-        <input id="email" type="email" />
+        <label for="email">* Kontakt:</label><br />
+        <input
+          id="email"
+          type="email"
+          placeholder="email@adresa.com"
+          required
+        />
+        <br />
+        <label for="tel">Telefon:</label><br />
+        <input id="tel" type="tel" placeholder="00 385 9xxxxxxx" />
+      </p>
+
+      <p>
+        <label>* Spol: </label><br />
+        <!--
+        <input id="ono" type="radio" name="spol" checked />
+        <label for="ono">Ne želim se identificirati</label>
+        <br />
+        -->
+        <input id="musko" type="radio" name="spol" required />
+        <label for="musko">M</label>
+        <br />
+        <input id="zensko" type="radio" name="spol" required />
+        <label for="zensko">Ž</label>
+      </p>
+      <p>
+        <label for="opis">* Opis problema:</label><br />
+        <textarea
+          id="opis"
+          name="opis"
+          rows="7"
+          cols="50"
+          maxlength="200"
+          required
+          placeholder="unesite opis do max 200 znakova"
+        ></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Pošalji" />
       </p>
     </form>
   </body>
